@@ -17,6 +17,7 @@ def plot_pressure_curves(planet, condensates):
     P_max       = planet['P_max']
     T = np.arange(T_min, T_max, T_step)
 
+    plt.figure(figsize=(10,10))
     pressure = P(P_o, T, T_o, g, gamma_ad, R.si.value, mu)
     plt.semilogy(T,pressure, label='Theoretical P/T Profile')
 
