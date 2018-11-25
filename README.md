@@ -1,6 +1,6 @@
 # Cloud formation of condensible species in exoplanet atmospheres using the Clausius-Clapeyron equation
 
-To run this code, use the plot_pressure_curves() function as in the examples below. Note: Current background on this model can be found here: "https://github.com/rschroder/exoplanet_clouds/blob/master/c162_exoplanet_cloud_formation.pdf"
+To run this code, use the plot_pressure_curves() function as in the examples below. Note: Current background on this model can be found here: https://github.com/rschroder/exoplanet_clouds/blob/master/c162_exoplanet_cloud_formation.pdf
 
 ```python
 %matplotlib inline
