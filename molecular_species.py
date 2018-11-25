@@ -211,11 +211,11 @@ H20_solid_1_neptune = {
 FE_solid_1_HD209458b = {
     'name'     : "$Fe \ Solid$",
 #    'ln_c'     : 15.71,           # From marley
-    'ln_c'     : 1.894,           # From table II,sanchez-lavega 2003
-#    'Lo'       : 6250.,           # From table II,sanchez-lavega 2003
-    'Lo'       : 7097.,           # From table II,sanchez-lavega 2003
-    'alpha'    : 0.4,               # From table II,sanchez-lavega 2003
-    'beta'     : 0.,    # From table II,sanchez-lavega 2003
+    'ln_c'     : 1.894,            # From table II,sanchez-lavega 2003
+    'Lo'       : 7097.,            # From table II,sanchez-lavega 2003
+#    'alpha'    : 0.4,               # From CRC
+    'alpha'    : 0.0,               # From table II,sanchez-lavega 2003
+    'beta'     : 0.,                # From table II,sanchez-lavega 2003
     'Xc'       : 6.77*10**(-5),     # from table III, sanchez-lavega 2003
     'Rv'       : 8.3144598/55.84,  # Remember to plug in mu_cl for cloud vapor
 }
@@ -224,10 +224,19 @@ MGSIO3_solid_1_HD209458b = {
     'name'     : "$MgSiO_{3} \ Solid$",
 #    'ln_c'     : 25.37,           # From marley
     'ln_c'     : 11.554,           # From table II,sanchez-lavega 2003
-#    'Lo'       : 4500.5,           # From table II,sanchez-lavega 2003
     'Lo'       : 4877.5,           # From table II,sanchez-lavega 2003
-    'alpha'    : 0.16,               # From table II,sanchez-lavega 2003
+    'alpha'    : 0.0,               # From table II,sanchez-lavega 2003
+#    'alpha'    : 0.16,               # made up
     'beta'     : 0,    # From table II,sanchez-lavega 2003
     'Xc'       : 7.52*10**(-5),     # from table III, sanchez-lavega 2003
     'Rv'       : 8.3144598/100.4,  # Remember to plug in mu_cl for cloud vapor
+}
+NH3_solid_1_HD189733b = {
+    'name'     : "$NH_{3} \ Solid$",
+    'ln_c'     : 27.863,           # From table II,sanchez-lavega 2003
+    'Lo'       : 2016.,           # From table II,sanchez-lavega 2003
+    'alpha'    : -0.888,               # From table II,sanchez-lavega 2003
+    'beta'     : 0,    # From table II,sanchez-lavega 2003
+    'Xc'       : 2.0*10**(-5),     # from table III, sanchez-lavega 2003
+    'Rv'       : 8.3144598/17.00,  # Remember to plug in mu_cl for cloud vapor
 }

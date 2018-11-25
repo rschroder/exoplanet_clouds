@@ -100,6 +100,19 @@ hd209458b = {
     'T_min'    : 800.,            # K, Figure 3, sanchez-lavega 2003
     'T_max'    : 2400.,            # K, Figure 3, sanchez-lavega 2003
     'T_step'   : 1.,              # K
-    'P_min'    : 0.1,             # bar, Figure 3, sanchez-lavega 2003
+    'P_min'    : 0.00001,             # bar, Figure 3, sanchez-lavega 2003
+    'P_max'    : 10.0,             # bar, Figure 3, sanchez-lavega 2003
+}
+HD189733b = {
+    'name'     : 'HD189733b',
+    'P_o'      : 1.0,           # bar, Table I, sanchez-lavega 2003
+    'T_o'      : 1300.,            # K, Table I, sanchez-lavega 2003
+    'g'        : 8.0,            # m/s^2, Table I, sanchez-lavega 2003
+    'gamma_ad' : 0.60,       # K/m  ----- 6.5 K/km -> taken from 'planetary sciences', de Pater
+    'mu'       : 2.0,     # kg/mol, Table I, sanchez-lavega 2003
+    'T_min'    : 800.,            # K, Figure 3, sanchez-lavega 2003
+    'T_max'    : 2400.,            # K, Figure 3, sanchez-lavega 2003
+    'T_step'   : 1.,              # K
+    'P_min'    : 0.0001,             # bar, Figure 3, sanchez-lavega 2003
     'P_max'    : 10.0,             # bar, Figure 3, sanchez-lavega 2003
 }
