@@ -97,7 +97,7 @@ hd209458b = {
     'g'        : 8.0,            # m/s^2, Table I, sanchez-lavega 2003
     'gamma_ad' : 0.60,       # K/m  ----- 6.5 K/km -> taken from 'planetary sciences', de Pater
     'mu'       : 2.0,     # kg/mol, Table I, sanchez-lavega 2003
-    'T_min'    : 800.,            # K, Figure 3, sanchez-lavega 2003
+    'T_min'    : 1200.,            # K, Figure 3, sanchez-lavega 2003
     'T_max'    : 2400.,            # K, Figure 3, sanchez-lavega 2003
     'T_step'   : 1.,              # K
     'P_min'    : 0.1,             # bar, Figure 3, sanchez-lavega 2003
@@ -107,26 +107,26 @@ HD189733b = {
     'name'     : 'HD189733b',
     'P_o'      : 1.0,           # bar, Table I, sanchez-lavega 2003
     'T_o'      : 1117.,            # K, Table I, sanchez-lavega 2003
-    'g'        : 21.2,            # m/s^2, Table I, sanchez-lavega 2003
-    'gamma_ad' : 1.177,       # K/m  ----- 6.5 K/km -> taken from 'planetary sciences', de Pater
+    'g'        : 21.85,            # m/s^2, Table I, sanchez-lavega 2003
+    'gamma_ad' : 1.514,       # K/m  ----- 6.5 K/km -> taken from 'planetary sciences', de Pater
     'mu'       : 2.0,     # kg/mol, Table I, sanchez-lavega 2003
-    'T_min'    : 800.,            # K, Figure 3, sanchez-lavega 2003
+    'T_min'    : 1400.,            # K, Figure 3, sanchez-lavega 2003
     'T_max'    : 2000.,            # K, Figure 3, sanchez-lavega 2003
     'T_step'   : 1.,              # K
-    'P_min'    : 0.0001,             # bar, Figure 3, sanchez-lavega 2003
-    'P_max'    : 100.0,             # bar, Figure 3, sanchez-lavega 2003
+    'P_min'    : 0.1,             # bar, Figure 3, sanchez-lavega 2003
+    'P_max'    : 10.0,             # bar, Figure 3, sanchez-lavega 2003
 }
 WASP43b = {
     'name'     : 'WASP43b',
     'P_o'      : 1.0,           # bar, Table I, sanchez-lavega 2003
     'T_o'      : 1440.,            # K, Table I, sanchez-lavega 2003
-    'g'        : 3.7,            # m/s^2, Table I, sanchez-lavega 2003
-    'gamma_ad' : 0.05,       # K/m  ----- 6.5 K/km -> taken from 'planetary sciences', de Pater
+    'g'        : 47.3,            # m/s^2, Table I, sanchez-lavega 2003
+    'gamma_ad' : 0.264,       # K/m  ----- 6.5 K/km -> taken from 'planetary sciences', de Pater
     'mu'       : 2.0,           # kg/mol, Table I, sanchez-lavega 2003
-    'T_min'    : 1200.,            # K, Figure 3, sanchez-lavega 2003
-    'T_max'    : 5000.,            # K, Figure 3, sanchez-lavega 2003
+    'T_min'    : 1000.,            # K, Figure 3, sanchez-lavega 2003
+    'T_max'    : 2200.,            # K, Figure 3, sanchez-lavega 2003
     'T_step'   : 1.,              # K
-    'P_min'    : 0.001,             # bar, Figure 3, sanchez-lavega 2003
+    'P_min'    : 0.00001,             # bar, Figure 3, sanchez-lavega 2003
     'P_max'    : 1000.0,             # bar, Figure 3, sanchez-lavega 2003
 }
 GJ436b = {
@@ -140,5 +140,5 @@ GJ436b = {
     'T_max'    : 1000.,            # K, Figure 3, sanchez-lavega 2003
     'T_step'   : 1.,              # K
     'P_min'    : 0.00001,             # bar, Figure 3, sanchez-lavega 2003
-    'P_max'    : 10.0,             # bar, Figure 3, sanchez-lavega 2003
+    'P_max'    : 1000.0,             # bar, Figure 3, sanchez-lavega 2003
 }

@@ -104,11 +104,11 @@ def plot_pressure_curves_cba(planet, A, B, C):
     plt.semilogy(T,pressure, label='Atmosphere P-T Profile', color = 'lightsalmon', \
         linewidth=3)
     #labelLines(plt.gca().get_lines(),align=False,fontsize=10)
-    constraint_range = [6.77*10**(-5)]
+    constraint_range = [10**(-3),10**(-4),10**(-5),10**(-6)]
     i = 0
     for Xc in constraint_range:
         i = i + 1
-        c0 = plt.cm.Blues(float(i)/len(constraint_range))
+        c0 = plt.cm.summer(float(i)/len(constraint_range))
         c1 = plt.cm.Reds(float(i)/len(constraint_range))
         svp = svp_cba(A, B, C, T, Xc)
         plt.semilogy(T,svp, label='Fe - mole fraction ' + str(Xc), linestyle = '-', \
@@ -116,14 +116,18 @@ def plot_pressure_curves_cba(planet, A, B, C):
 
         idx = np.argwhere(np.diff(np.sign(pressure - svp))).flatten()
         cloud_base = cloud_base_location(T_o, g, pressure[idx], P_o, mu)
-        plt.plot(T[idx], pressure[idx], 'p', color = c1, \
-            label = str(cloud_base) + ' km')
+        plt.plot(T[idx], pressure[idx], 'p', color = c1)
+
+        print str(cloud_base) + ' km'
+        print str(T[idx]) + ' K'
+        print str(pressure[idx]) + ' bar'
+        print ' '
 
     plt.ylim(P_max, P_min)
     plt.xlabel('T(K)')
     plt.ylabel('Pv (bar)')
     plt.title(name)
-    plt.legend(loc=0)
+    plt.legend(loc=1)
     plt.grid(True)
     plt.show()
 
