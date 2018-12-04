@@ -47,7 +47,7 @@ NH3_solid_1_jupiter = {
 }
 NH4SH_solid_1_jupiter = {
     'name'     : "$NH_{4}SH \ Solid$",
-    'ln_c'     : 75.678,           # From table II,sanchez-lavega 2003
+    'ln_c'     : 120.678,           # From table II,sanchez-lavega 2003
     'Lo'       : 2915.7,           # From table II,sanchez-lavega 2003
     'alpha'    : -1.760,               # From table II,sanchez-lavega 2003
     'beta'     : 7.8*10**(-4),    # From table II,sanchez-lavega 2003
@@ -83,7 +83,7 @@ NH3_solid_1_saturn = {
 }
 NH4SH_solid_1_saturn = {
     'name'     : "$NH_{4}SH \ Solid$",
-    'ln_c'     : 75.678,           # From table II,sanchez-lavega 2003
+    'ln_c'     : 120.678,           # From table II,sanchez-lavega 2003
     'Lo'       : 2915.7,           # From table II,sanchez-lavega 2003
     'alpha'    : -1.760,               # From table II,sanchez-lavega 2003
     'beta'     : 7.8*10**(-4),    # From table II,sanchez-lavega 2003
@@ -146,7 +146,7 @@ NH3_solid_1_uranus = {
 }
 NH4SH_solid_1_uranus = {
     'name'     : "$NH_{4}SH \ Solid$",
-    'ln_c'     : 75.678,           # From table II,sanchez-lavega 2003
+    'ln_c'     : 120.678,           # From table II,sanchez-lavega 2003
     'Lo'       : 2915.7,           # From table II,sanchez-lavega 2003
     'alpha'    : -1.760,               # From table II,sanchez-lavega 2003
     'beta'     : 7.8*10**(-4),    # From table II,sanchez-lavega 2003
@@ -192,7 +192,7 @@ NH3_solid_1_neptune = {
 }
 NH4SH_solid_1_neptune = {
     'name'     : "$NH_{4}SH \ Solid$",
-    'ln_c'     : 75.678,           # From table II,sanchez-lavega 2003
+    'ln_c'     : 120.678,           # From table II,sanchez-lavega 2003
     'Lo'       : 2915.7,           # From table II,sanchez-lavega 2003
     'alpha'    : -1.760,               # From table II,sanchez-lavega 2003
     'beta'     : 7.8*10**(-4),    # From table II,sanchez-lavega 2003
@@ -211,13 +211,15 @@ H20_solid_1_neptune = {
 FE_solid_1_HD209458b = {
     'name'     : "$Fe \ Solid$",
 #    'ln_c'     : 15.71,           # From marley
-    'ln_c'     : 1.894,            # From table II,sanchez-lavega 2003
-    'Lo'       : 7097.,            # From table II,sanchez-lavega 2003
-#    'alpha'    : 0.4,               # From CRC
-    'alpha'    : 0.0,               # From table II,sanchez-lavega 2003
+    'ln_c'     : 15.71,            # From table II,sanchez-lavega 2003
+    'Lo'       : 47664.,            # From table II,sanchez-lavega 2003
+    'alpha'    : 0.,               # From CRC
+#    'alpha'    : 0.,               # From table II,sanchez-lavega 2003
     'beta'     : 0.,                # From table II,sanchez-lavega 2003
-    'Xc'       : 6.77*10**(-5),     # from table III, sanchez-lavega 2003
-    'Rv'       : 8.3144598/55.84,  # Remember to plug in mu_cl for cloud vapor
+#    'Xc'       : 6.77*10**(-5),     # from table III, sanchez-lavega 2003
+    'Xc'       : 1.,
+    'Rv'       : 1.,
+#    'Rv'       : 8.3144598/55.84,  # Remember to plug in mu_cl for cloud vapor
 }
 
 MGSIO3_solid_1_HD209458b = {
@@ -225,9 +227,9 @@ MGSIO3_solid_1_HD209458b = {
 #    'ln_c'     : 25.37,           # From marley
     'ln_c'     : 11.554,           # From table II,sanchez-lavega 2003
     'Lo'       : 4877.5,           # From table II,sanchez-lavega 2003
-    'alpha'    : 0.0,               # From table II,sanchez-lavega 2003
+    'alpha'    : 0.,               # From table II,sanchez-lavega 2003
 #    'alpha'    : 0.16,               # made up
-    'beta'     : 0,    # From table II,sanchez-lavega 2003
+    'beta'     : 0.,    # From table II,sanchez-lavega 2003
     'Xc'       : 7.52*10**(-5),     # from table III, sanchez-lavega 2003
     'Rv'       : 8.3144598/100.4,  # Remember to plug in mu_cl for cloud vapor
 }
@@ -239,4 +241,63 @@ NH3_solid_1_HD189733b = {
     'beta'     : 0,    # From table II,sanchez-lavega 2003
     'Xc'       : 2.0*10**(-5),     # from table III, sanchez-lavega 2003
     'Rv'       : 8.3144598/17.00,  # Remember to plug in mu_cl for cloud vapor
+}
+FE_solid_1_WASP43b = {
+    'name'     : "$Fe \ Solid$",
+#    'ln_c'     : 15.71,           # From marley
+    'ln_c'     : 15.71,            # From table II,sanchez-lavega 2003
+    'Lo'       : 47664.,            # From table II,sanchez-lavega 2003
+    'alpha'    : 0.,               # From CRC
+#    'alpha'    : 0.,               # From table II,sanchez-lavega 2003
+    'beta'     : 0.,                # From table II,sanchez-lavega 2003
+#    'Xc'       : 6.77*10**(-5),     # from table III, sanchez-lavega 2003
+    'Xc'       : 1.,
+    'Rv'       : 1.,
+#    'Rv'       : 8.3144598/55.84,  # Remember to plug in mu_cl for cloud vapor
+}
+
+H20_solid_1_GJ436b = {
+    'name'     : "$H_{2}O \ Solid$",
+    'ln_c'     : 25.096,           # From table II,sanchez-lavega 2003
+    'Lo'       : 3148.2,           # From table II,sanchez-lavega 2003
+    'alpha'    : 0.,               # From table II,sanchez-lavega 2003
+    'beta'     : -8.7*10**(-3),    # From table II,sanchez-lavega 2003
+    'Xc'       : [10e-9, 10e-8, 10e-7, 10e-6, 10e-5, 10e-4],     # from table III, sanchez-lavega 2003
+    'Rv'       : 8.3144598/18.02,  # Remember to plug in mu_cl for cloud vapor
+}
+H20_solid_1_HD189733b = {
+    'name'     : "$H_{2}O \ Solid$",
+    'ln_c'     : 25.096,           # From table II,sanchez-lavega 2003
+    'Lo'       : 3148.2,           # From table II,sanchez-lavega 2003
+    'alpha'    : 0.,               # From table II,sanchez-lavega 2003
+    'beta'     : -8.7*10**(-3),    # From table II,sanchez-lavega 2003
+    'Xc'       : 5.0*10**(-5),     # from table III, sanchez-lavega 2003
+    'Rv'       : 8.3144598/18.02,  # Remember to plug in mu_cl for cloud vapor
+}
+H20_liquid_1_HD189733b = {
+    'name'     : "$H_{2}O \ Liquid$",
+    'ln_c'     : 25.096,           # From table II,sanchez-lavega 2003
+    'Lo'       : 3148.2,           # From table II,sanchez-lavega 2003
+    'alpha'    : 0.,               # From table II,sanchez-lavega 2003
+    'beta'     : -8.7*10**(-3),    # From table II,sanchez-lavega 2003
+    'Xc'       : [10e-5, 10e-4, 10e-3, 10e-2,10e-2],     # from table III, sanchez-lavega 2003
+    'Rv'       : 8.3144598/18.02,  # Remember to plug in mu_cl for cloud vapor
+}
+H20_solid_2_earth = {
+    'name'     : "$H_{2}O \ Solid$",
+    'ln_c'     : 25.096,           # From table II,sanchez-lavega 2003
+    'Lo'       : 3148.2,           # From table II,sanchez-lavega 2003
+    'alpha'    : 0.,               # From table II,sanchez-lavega 2003
+    'beta'     : -8.7*10**(-3),    # From table II,sanchez-lavega 2003
+    'Xc'       : [2.5*10**(-4),2.5*10**(-3)] ,     # from table III, sanchez-lavega 2003
+    'Rv'       : 8.3144598/18.02,  # Remember to plug in mu_cl for cloud vapor
+}
+H20_liquid_1_WASP43b = {
+    'name'     : "$H_{2}O \ Liquid$",
+    'ln_c'     : 25.096,           # From table II,sanchez-lavega 2003
+    'Lo'       : 3148.2,           # From table II,sanchez-lavega 2003
+    'alpha'    : 0.,               # From table II,sanchez-lavega 2003
+    'beta'     : -8.7*10**(-3),    # From table II,sanchez-lavega 2003
+    'Xc'       : 6.1*10**(-4),            # from table III, sanchez-lavega 2003
+    'Rv'       : 8.3144598/18.02,  # Remember to plug in mu_cl for cloud vapor
 }
